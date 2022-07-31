@@ -1,0 +1,13 @@
+*{background-color:darkgray;}
+h1{text-align: center;}
+.container{
+    display: inline-block;
+    width: 156px;
+    height: 40px;
+    background-color: rgb(31, 153, 0);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 35px;}
+
+.container:hover{background-color: chartreuse;}
+footer{text-align: center; margin:100px;}
