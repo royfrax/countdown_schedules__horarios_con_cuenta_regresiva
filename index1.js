@@ -12,12 +12,12 @@ function countdown(id, limitDate, finalMessage){
     limitTime = countdownDate - now,
     days = Math.floor(limitTime/(1000 * 60 * 60 *24 )),
     hours = limitTime%(1000 * 60 * 60 *24 )/ (1000 * 60 * 60),
-    minutes,
-    seconds,
+    /*minutes,
+    seconds,*/
 
-    $countdown.innerHTML = "digits"
+    //$countdown.innerHTML = "00:00:00";
 
- console.log(countdownDate,now,limitTime);
+ console.log();
   },1000);
   
 }
