@@ -1,13 +1,24 @@
-*{background-color:darkgray;}
-h1{text-align: center;}
+*{
+    margin: 0;
+    padding: 0;
+    background-color:#405059;}
+h1{text-align: center;color: #ffad08;}
 .container{
     display: inline-block;
     width: 156px;
     height: 40px;
-    background-color: rgb(31, 153, 0);
+    background-color: #0c8f8f;
     padding: 20px;
     margin: 10px;
     border-radius: 35px;}
 
-.container:hover{background-color: chartreuse;}
-footer{text-align: center; margin:100px;}
+.container:hover{background-color: #73b06f;}
+footer{text-align: center; margin:100px;color: #0c8f8f; }
+
+
+/* paleta de colores base
+.color1 { #ffad08 };
+.color2 { #edd75a };
+.color3 { #73b06f };
+.color4 { #0c8f8f };
+.color5 { #405059 };*/
