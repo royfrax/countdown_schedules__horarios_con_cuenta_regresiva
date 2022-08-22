@@ -1,6 +1,6 @@
 const d = document;
 const inicia_turno = Date.now() +28800000;
-
+//const $button = d.getElementById(id);
 
 function countdown(id, limitDate, finalMessage){
   const $countdown = d.getElementById(id),
@@ -15,11 +15,11 @@ function countdown(id, limitDate, finalMessage){
     /*minutes,
     seconds,*/
 
-    //$countdown.innerHTML = "00:00:00";
+    $countdown.innerHTML = "00:00:00";
 
  console.log();
   },1000);
   
 }
 
-countdown("countdown","Aug 17 2022 05:22:10 GTM-0500","feliz cumple perro");
+countdown("countdown","Aug 17 2024 05:22:10 GTM-0500","feliz cumple perro");

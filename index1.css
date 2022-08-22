@@ -15,7 +15,13 @@ h1{text-align: center;color: #ffad08;}
 .container:hover{background-color: #73b06f;}
 footer{text-align: center; margin:100px;color: #0c8f8f; }
 
-
+button{
+    width: 75px;
+    height: 25px;
+    background-color:darkseagreen;
+    cursor: pointer;
+}
+button:hover{background-color:#ffad08}
 /* paleta de colores base
 .color1 { #ffad08 };
 .color2 { #edd75a };
