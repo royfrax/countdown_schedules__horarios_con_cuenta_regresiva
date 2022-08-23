@@ -15,7 +15,7 @@ function countdown(id, limitDate, finalMessage){
     /*minutes,
     seconds,*/
 
-    $countdown.innerHTML = "00:00:00";
+    $countdown.innerHTML ='' ;
 
  console.log();
   },1000);
