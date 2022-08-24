@@ -1,5 +1,5 @@
 const d = document;
-const inicia_turno = Date.now() +28800000;
+//d.addEventListener("DOM",) 
 //const $button = d.getElementById(id);
 
 function countdown(id, limitDate, finalMessage){
@@ -11,15 +11,18 @@ function countdown(id, limitDate, finalMessage){
     let now = new Date().getTime()
     limitTime = countdownDate - now,
     days = Math.floor(limitTime/(1000 * 60 * 60 *24 )),
-    hours = limitTime%(1000 * 60 * 60 *24 )/ (1000 * 60 * 60),
-    /*minutes,
-    seconds,*/
+    hours = ("0"+ Math.floor (limitTime%(1000 * 60 * 60 *24 )/ (1000 * 60 * 60))).slice(-2),
+    minutes = ("0"+ Math.floor (limitTime%(1000 * 60 * 60) / (1000 * 60 ))).slice(-2),
+    seconds = ("0"+ Math.floor ((limitTime%(1000 * 60))/(1000))).slice(-2),
 
-    $countdown.innerHTML ='' ;
-
- console.log();
+    $countdown.innerHTML = "Quedan "+ (hours)+ " horas "+ (minutes)+" minutos " + (seconds) + " segundos del turno"    ;
+    
+ console.log(countdownDate);
+ if(limitTime < 0){
+  clearInterval(countdownTempo);
+  $countdown.innerHTML = finalMessage;
+ }
   },1000);
   
 }
-
-countdown("countdown","Aug 17 2024 05:22:10 GTM-0500","feliz cumple perro");
+countdown("countdown","Sep 23 , 2022 03:02:10","lo lorge")
