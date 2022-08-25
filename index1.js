@@ -1,11 +1,12 @@
+
 const d = document;
-//d.addEventListener("DOM",) 
-//const $button = d.getElementById(id);
+
+ d.getElementById("countdown2").addEventListener("click", countdown);
 
 function countdown(id, limitDate, finalMessage){
   const $countdown = d.getElementById(id),
   countdownDate= new Date(limitDate).getTime();
-
+      
 
   let countdownTempo= setInterval(() => {
     let now = new Date().getTime()
@@ -14,10 +15,11 @@ function countdown(id, limitDate, finalMessage){
     hours = ("0"+ Math.floor (limitTime%(1000 * 60 * 60 *24 )/ (1000 * 60 * 60))).slice(-2),
     minutes = ("0"+ Math.floor (limitTime%(1000 * 60 * 60) / (1000 * 60 ))).slice(-2),
     seconds = ("0"+ Math.floor ((limitTime%(1000 * 60))/(1000))).slice(-2),
-
-    $countdown.innerHTML = "Quedan "+ (hours)+ " horas "+ (minutes)+" minutos " + (seconds) + " segundos del turno"    ;
     
- console.log(countdownDate);
+
+    $countdown.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
+    
+ //console.log(countdownDate);
  if(limitTime < 0){
   clearInterval(countdownTempo);
   $countdown.innerHTML = finalMessage;
@@ -25,4 +27,4 @@ function countdown(id, limitDate, finalMessage){
   },1000);
   
 }
-countdown("countdown","Sep 23 , 2022 03:02:10","lo lorge")
+countdown("countdown", "Aug 25, 2022 23:02:00", "ahi vas")
