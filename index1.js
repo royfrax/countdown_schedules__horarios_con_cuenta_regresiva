@@ -41,7 +41,7 @@ function countdown(id,  finalMessage){
     seconds = ("0"+ Math.floor ((limitTime%(1000 * 60))/(1000))).slice(-2),
     
 
-    $countdown.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
+    $countdown.innerHTML  ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
     $countdown2.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
     $countdown3.innerHTML ="Quedan" + (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
     $countdown4.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
@@ -82,4 +82,9 @@ function addHours(hours){
   var addedHours = new Date().setHours(date.getHours() + hours);
   return addedHours;
 }
+
+let hoy = new Date();
+
+const $HOY = d.getElementById("HOY")
+$HOY.innerHTML = (hoy);
 
