@@ -17,9 +17,10 @@ footer{text-align: center; margin:100px;color: #0c8f8f; }
 
 button{
     width: 75px;
-    height: 25px;
+    height: 35px;
     background-color:darkseagreen;
     cursor: pointer;
+    
 }
 button:hover{background-color:#ffad08}
 /* paleta de colores base
@@ -30,4 +31,5 @@ button:hover{background-color:#ffad08}
 .color5 { #405059 };*/
 .hoy {
     color: aliceblue; text-align: center;
+    font-size:30px;
 }

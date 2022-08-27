@@ -35,8 +35,8 @@ function countdown(id,  finalMessage){
   let countdownTempo= setInterval(() => {
     let now = new Date().getTime()
     limitTime =  countdownDate - now  ,
-    days = Math.floor(limitTime/(1000 * 60 * 60 *24 )),
-    hours = ("0"+ Math.floor (limitTime%(1000 * 60 * 60 *24 )/ (1000 * 60 * 60))).slice(-2),
+    days =    Math.floor(limitTime/(1000 * 60 * 60 *24 )),
+    hours =   ("0"+ Math.floor (limitTime%(1000 * 60 * 60 *24 )/ (1000 * 60 * 60))).slice(-2),
     minutes = ("0"+ Math.floor (limitTime%(1000 * 60 * 60) / (1000 * 60 ))).slice(-2),
     seconds = ("0"+ Math.floor ((limitTime%(1000 * 60))/(1000))).slice(-2),
     
@@ -68,7 +68,7 @@ function countdown(id,  finalMessage){
     $countdown25.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
 
     
- if(limitTime < 0){
+ if(limitTime < 1){
   clearInterval(countdownTempo);
   $countdown.innerHTML = finalMessage;
  }
@@ -83,8 +83,30 @@ function addHours(hours){
   return addedHours;
 }
 
-let hoy = new Date();
+function fecha_actual(id) 
+{
+  let hoy = new Date().toLocaleString();// fecha actual en formato dd/mm/aa/ HH:MM:SS
+  const $HOY = d.getElementById("HOY")
+  
+  let fecha_constante = setInterval(()=> {
+    
+    const nombreDelDiaSegunFecha = now => [
+      'domingo',
+      'lunes',
+      'martes',
+      'miércoles',
+      'jueves',
+      'viernes',
+      'sábado',
+      'domingo',
+    ][new Date().getDay()];
+    $HOY.innerHTML  = nombreDelDiaSegunFecha() + " " + new Date().toLocaleString();
+      },1000)
+    
+}
 
-const $HOY = d.getElementById("HOY")
-$HOY.innerHTML = (hoy);
+fecha_actual("HOY");
+//let hoy = new Date().toLocaleString();// fecha actual en formato dd/mm/aa/ HH:MM:SS
+//const $HOY = d.getElementById("HOY")
+//$HOY.innerHTML = (hoy);
 
