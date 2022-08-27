@@ -106,7 +106,5 @@ function fecha_actual(id)
 }
 
 fecha_actual("HOY");
-//let hoy = new Date().toLocaleString();// fecha actual en formato dd/mm/aa/ HH:MM:SS
-//const $HOY = d.getElementById("HOY")
-//$HOY.innerHTML = (hoy);
+
 
