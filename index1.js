@@ -32,7 +32,7 @@ function countdown(id,  finalMessage){
   countdownDate = addHours(8);
       
 
-  let countdownTempo= setInterval(() => {
+  let countdownTempo= setInterval(() => {   //countdownTempo es para ir actualizando el reloj cada segundo (el valor se obtiene en milisegundos)
     let now = new Date().getTime()
     limitTime =  countdownDate - now  ,
     days =    Math.floor(limitTime/(1000 * 60 * 60 *24 )),
@@ -41,31 +41,31 @@ function countdown(id,  finalMessage){
     seconds = ("0"+ Math.floor ((limitTime%(1000 * 60))/(1000))).slice(-2),
     
 
-    $countdown.innerHTML  ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown2.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown3.innerHTML ="Quedan" + (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown4.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown5.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown6.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown7.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown8.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown9.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown10.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown11.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown12.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown13.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown14.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown15.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown16.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown17.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown18.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown19.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown20.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown21.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown22.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown23.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown24.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
-    $countdown25.innerHTML ="Quedan "+ (hours)+ " horas "+ (minutes)+" minutos y " + (seconds) + " segundos del turno" ;
+    $countdown.innerHTML  =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown2.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown3.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown4.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown5.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown6.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown7.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown8.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown9.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown10.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown11.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown12.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown13.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown14.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown15.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown16.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown17.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown18.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown19.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown20.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown21.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown22.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown23.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown24.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
+    $countdown25.innerHTML =`Quedan ${hours} horas ${minutes} minutos y ${seconds} segundos del turno` ;
 
     
  if(limitTime < 1){
@@ -75,22 +75,22 @@ function countdown(id,  finalMessage){
   },1000);
   
 }
-
+//agregar horas a la fecha actual
 let date = new Date();
 function addHours(hours){
-  //agregar horas a la fecha actual
+ 
   var addedHours = new Date().setHours(date.getHours() + hours);
   return addedHours;
 }
 
-function fecha_actual(id) 
+function fecha_actual() 
 {
   let hoy = new Date().toLocaleString();// fecha actual en formato dd/mm/aa/ HH:MM:SS
   const $HOY = d.getElementById("HOY")
   
   let fecha_constante = setInterval(()=> {
     
-    const nombreDelDiaSegunFecha = now => [
+    const Nombre_Del_Dia_Segun_Fecha = hoy => [ 
       'domingo',
       'lunes',
       'martes',
@@ -100,7 +100,7 @@ function fecha_actual(id)
       'sábado',
       'domingo',
     ][new Date().getDay()];
-    $HOY.innerHTML  = nombreDelDiaSegunFecha() + " " + new Date().toLocaleString();
+    $HOY.innerHTML  = Nombre_Del_Dia_Segun_Fecha() + " " + new Date().toLocaleString();
       },1000)
     
 }
