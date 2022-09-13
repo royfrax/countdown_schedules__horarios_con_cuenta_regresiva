@@ -22,7 +22,7 @@ h1{text-align: center;color: #e7e7e7;background:#6f0550;}
 }
 
 .container:hover{background: #73b06f;}
-footer{text-align: center; margin:100px;color: #0c8f8f; }
+footer{text-align: center; margin:100px;color: #0c8f8f; } /*estilo de pie  de pagina*/
 
 button{
     width: 75px;
@@ -33,7 +33,7 @@ button{
     margin: 0 auto;
     border-radius: 50px;}   
     po
-button:hover{background-color:#ffad08; text-align: center;}
+button:hover{background-color:#ffad08; text-align: center;} /*efectos para el cuadro tomar turno
 
 /* paleta de colores base
 .color1 { #ffad08 };
@@ -48,3 +48,5 @@ button:hover{background-color:#ffad08; text-align: center;}
 
 .BarraSuperior{font-size: larger;color: rgb(11, 11, 11); text-align: right;position: relative; left: 0%; bottom: 185px;}/*estilos para la barra de inicio de sesion*/
 a{ text-decoration: none;}
+
+
